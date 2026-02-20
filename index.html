@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rai Fitness & Finanças</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- TELAS -->
+    <div id="treinos" class="screen active">
+      <h2>🏋️ Treinos</h2>
+
+      <div class="treino-buttons">
+        <button onclick="selecionarTreino('A')">Treino A</button>
+        <button onclick="selecionarTreino('B')">Treino B</button>
+        <button onclick="selecionarTreino('C')">Treino C</button>
+        <button onclick="selecionarTreino('HIIT')">HIIT</button>
+      </div>
+
+      <div id="tabelaTreino"></div>
+      <button class="primary" onclick="adicionarExercicio()">➕ Adicionar Exercício</button>
+      <button class="primary" onclick="finalizarTreino()">💾 Finalizar Treino</button>
+    </div>
+
+    <div id="historico" class="screen">
+      <h2>📊 Histórico</h2>
+      <div id="listaHistorico"></div>
+    </div>
+
+    <div id="financeiro" class="screen">
+      <h2>💰 Financeiro - Março</h2>
+
+      <h3>Ganhos</h3>
+      <input type="text" id="fonte" placeholder="Fonte">
+      <input type="number" id="valorGanho" placeholder="Valor">
+      <button onclick="adicionarGanho()">Adicionar</button>
+
+      <h3>Gastos</h3>
+      <input type="text" id="categoria" placeholder="Categoria">
+      <input type="number" id="valorGasto" placeholder="Valor">
+      <button onclick="adicionarGasto()">Adicionar</button>
+
+      <h3>Meta de Economia</h3>
+      <input type="number" id="meta" placeholder="Meta mensal">
+
+      <div id="resumoFinanceiro"></div>
+    </div>
+
+  </div>
+
+  <!-- NAVEGAÇÃO INFERIOR -->
+  <div class="bottom-nav">
+    <button onclick="mostrarTela('treinos')">🏋️</button>
+    <button onclick="mostrarTela('historico')">📊</button>
+    <button onclick="mostrarTela('financeiro')">💰</button>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

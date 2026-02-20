@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+}
+
+.app {
+  padding: 20px;
+  padding-bottom: 80px;
+}
+
+h2 {
+  color: #d63384;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+button.primary {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
